@@ -6,7 +6,6 @@ import"./assets/modulepreload-polyfill-3cfb730f.js";import{S as p}from"./assets/
 			alt="${o.description}" 
 			/>
 	</a>
-	<div class="caption">${o.description}</div>
 </li>`}function e(o){return o.map(t).join(`
 
 `)}function n(){const o=e(a);i.innerHTML=o}n();new p(".gallery a",{captionsData:"alt",captionDelay:250});
