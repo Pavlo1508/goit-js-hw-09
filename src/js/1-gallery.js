@@ -78,17 +78,16 @@ function galleryItemTemplate(item) {
 			alt="${item.description}" 
 			/>
 	</a>
-	<div class="caption">${item.description}</div>
 </li>`;
 };
 
-function galleryTemplate(images) {
+function createGalleryMarkup(images) {
 	const markup = images.map(galleryItemTemplate).join('\n\n');
 	return markup;
 }
 
 function render() {
-	const markupToRender = galleryTemplate(images);
+	const markupToRender = createGalleryMarkup(images);
 	galleryPosition.innerHTML = markupToRender;
 }
 
